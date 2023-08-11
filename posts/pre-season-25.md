@@ -8,7 +8,7 @@ category: 'CFB'
 
 ## First Kick-off
 
-Saturday, August 26th 2023, Navy squares up against Notre Dame.
+Saturday, August 26th 2023, Navy squares up against Notre Dame. 
 
 ## What To Expect This Year, 2023
 

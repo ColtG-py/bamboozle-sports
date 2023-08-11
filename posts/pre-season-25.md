@@ -1,9 +1,9 @@
 ---
-title: 'Clemson vs. Duke'
+title: 'Pre-Season Top 25'
 date: '2023-09-04'
 chapter: '0'
-tags: ['Blow Out']
-category: 'ACC'
+tags: ['Pre-Season']
+category: 'CFB'
 ---
 
 ## First Kick-off

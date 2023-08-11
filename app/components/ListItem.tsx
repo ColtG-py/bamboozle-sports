@@ -33,10 +33,6 @@ export default function ListItem({ post }: Props) {
                     <CardHeader>
                         <div className="flex">
                             <CardTitle className="text-2xl">{title} </CardTitle>
-                            <Avatar className="flex-none ml-auto">
-                                <AvatarImage src="https://i.ibb.co/3c4Tn7Y/CG.jpg" />
-                                <AvatarFallback>CG</AvatarFallback>
-                            </Avatar>
                         </div>
                     </CardHeader>
                 </Card>

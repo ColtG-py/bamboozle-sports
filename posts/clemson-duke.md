@@ -1,7 +1,7 @@
 ---
 title: 'Clemson vs. Duke'
 date: '2023-09-04'
-chapter: '0'
+chapter: '1'
 tags: ['Blow Out']
 category: 'ACC'
 ---

@@ -26,6 +26,10 @@ jobs:
       
       - name: Run Python Script
         run: python scr/gen-article.py
+        with:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Create and Push File
         run: |

@@ -20,7 +20,7 @@ jobs:
           git config --global user.name "Github Actions"
           git config --global user.email "colt.gainey@gmail.com"
           git add newfile.txt
-          git commit -m "Add newfile.txt"
-          git push origin main
+          git commit -a -m "test"
+          git push
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}

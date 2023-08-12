@@ -20,6 +20,7 @@ jobs:
           git config --global user.name "Github Actions"
           git add newfile.txt
           git commit -m "Add newfile.txt"
-          git push origin main
+          git remote add origin_with_token https://github.com/ColtG-py/bamboozle-sports.git
+          git push origin_with_token main
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}

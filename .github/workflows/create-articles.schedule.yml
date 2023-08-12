@@ -18,6 +18,7 @@ jobs:
           echo "This is the content of the file." > newfile.txt
           ls
           git config --global user.name "Github Actions"
+          git config --global user.email "colt.gainey@gmail.com"
           git add newfile.txt
           git commit -m "Add newfile.txt"
           git remote add origin_with_token https://github.com/ColtG-py/bamboozle-sports.git

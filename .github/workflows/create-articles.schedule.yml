@@ -1,0 +1,25 @@
+name: Create and Push File on Schedule
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"  # This runs the workflow every day at midnight UTC
+
+jobs:
+  create_and_push_file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Create and Push File
+        run: |
+          echo "This is the content of the file." > newfile.txt
+          ls
+          git config --global user.name "Github Actions"
+          git add newfile.txt
+          git commit -m "Add newfile.txt"
+          git push origin main
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}

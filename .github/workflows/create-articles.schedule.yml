@@ -2,8 +2,8 @@ name: Create and Push File on Schedule
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *"  # This runs the workflow every day at midnight UTC
+  # schedule:
+  #   - cron: "0 0 * * *"  # This runs the workflow every day at midnight UTC
 
 jobs:
   create_and_push_file:
@@ -31,12 +31,11 @@ jobs:
 
       - name: Create and Push File
         run: |
-          echo "This is the content of the file." > newfile.txt
           ls
           git config --global user.name "Github Actions"
           git config --global user.email "colt.gainey@gmail.com"
-          # git add newfile.txt
-          # git commit -a -m "test"
-          # git push
+          git add posts/*
+          git commit -a -m "I'm sure these articles are accurate and not controversial"
+          git push
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
